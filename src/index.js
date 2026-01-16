@@ -417,7 +417,7 @@ async function handleSetup(interaction) {
   await cleanupExistingLogs(guild.id);
 
   const category = await guild.channels.create({
-    name: 'mod-logs',
+    name: 'eienn-logs',
     type: ChannelType.GuildCategory,
     permissionOverwrites: overwrites
   });
@@ -924,3 +924,4 @@ function executorFromEntry(entry) {
 }
 
 client.login(token);
+
